@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="572.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.project.chess.controller.ControllerServer">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#796a51" height="572.0" stroke="BLACK" strokeType="INSIDE" width="572.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="520.0" layoutX="26.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="520.0" />
+      <Rectangle fx:id="A1" fill="#b48661" height="64.0" layoutX="30.0" layoutY="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="A4" fill="#f0d8b3" height="64.0" layoutX="222.0" layoutY="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="A8" fill="#f0d8b3" height="64.0" layoutX="478.0" layoutY="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="A6" fill="#f0d8b3" height="64.0" layoutX="350.0" layoutY="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="A2" fill="#f0d8b3" height="64.0" layoutX="94.0" layoutY="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="A7" fill="#b48661" height="64.0" layoutX="414.0" layoutY="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="A3" fill="#b48661" height="64.0" layoutX="158.0" layoutY="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="A5" fill="#b48661" height="64.0" layoutX="286.0" layoutY="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="E5" fill="#b48661" height="64.0" layoutX="286.0" layoutY="286.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="E3" fill="#b48661" height="64.0" layoutX="158.0" layoutY="286.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="E7" fill="#b48661" height="64.0" layoutX="414.0" layoutY="286.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="E2" fill="#f0d8b3" height="64.0" layoutX="94.0" layoutY="286.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="E6" fill="#f0d8b3" height="64.0" layoutX="350.0" layoutY="286.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="E8" fill="#f0d8b3" height="64.0" layoutX="478.0" layoutY="286.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="E4" fill="#f0d8b3" height="64.0" layoutX="222.0" layoutY="286.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="E1" fill="#b48661" height="64.0" layoutX="30.0" layoutY="286.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="G5" fill="#b48661" height="64.0" layoutX="286.0" layoutY="414.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="G3" fill="#b48661" height="64.0" layoutX="158.0" layoutY="414.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="G7" fill="#b48661" height="64.0" layoutX="414.0" layoutY="414.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="G2" fill="#f0d8b3" height="64.0" layoutX="94.0" layoutY="414.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="G6" fill="#f0d8b3" height="64.0" layoutX="350.0" layoutY="414.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="G8" fill="#f0d8b3" height="64.0" layoutX="478.0" layoutY="414.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="G4" fill="#f0d8b3" height="64.0" layoutX="222.0" layoutY="414.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="G1" fill="#b48661" height="64.0" layoutX="30.0" layoutY="414.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="B4" fill="#b48661" height="64.0" layoutX="222.0" layoutY="94.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="B2" fill="#b48661" height="64.0" layoutX="94.0" layoutY="94.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="B6" fill="#b48661" height="64.0" layoutX="350.0" layoutY="94.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="B1" fill="#f0d8b3" height="64.0" layoutX="30.0" layoutY="94.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="B5" fill="#f0d8b3" height="64.0" layoutX="286.0" layoutY="94.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="B7" fill="#f0d8b3" height="64.0" layoutX="414.0" layoutY="94.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="B3" fill="#f0d8b3" height="64.0" layoutX="158.0" layoutY="94.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="B8" fill="#b48661" height="64.0" layoutX="478.0" layoutY="94.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="H8" fill="#b48661" height="64.0" layoutX="478.0" layoutY="478.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="H3" fill="#f0d8b3" height="64.0" layoutX="158.0" layoutY="478.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="H7" fill="#f0d8b3" height="64.0" layoutX="414.0" layoutY="478.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="H5" fill="#f0d8b3" height="64.0" layoutX="286.0" layoutY="478.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="H1" fill="#f0d8b3" height="64.0" layoutX="30.0" layoutY="478.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="H6" fill="#b48661" height="64.0" layoutX="350.0" layoutY="478.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="H2" fill="#b48661" height="64.0" layoutX="94.0" layoutY="478.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="H4" fill="#b48661" height="64.0" layoutX="222.0" layoutY="478.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="F8" fill="#b48661" height="64.0" layoutX="478.0" layoutY="350.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="F3" fill="#f0d8b3" height="64.0" layoutX="158.0" layoutY="350.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="F7" fill="#f0d8b3" height="64.0" layoutX="414.0" layoutY="350.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="F5" fill="#f0d8b3" height="64.0" layoutX="286.0" layoutY="350.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="F1" fill="#f0d8b3" height="64.0" layoutX="30.0" layoutY="350.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="F6" fill="#b48661" height="64.0" layoutX="350.0" layoutY="350.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="F2" fill="#b48661" height="64.0" layoutX="94.0" layoutY="350.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="F4" fill="#b48661" height="64.0" layoutX="222.0" layoutY="350.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="D8" fill="#b48661" height="64.0" layoutX="478.0" layoutY="222.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="D3" fill="#f0d8b3" height="64.0" layoutX="158.0" layoutY="222.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="D7" fill="#f0d8b3" height="64.0" layoutX="414.0" layoutY="222.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="D5" fill="#f0d8b3" height="64.0" layoutX="286.0" layoutY="222.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="D1" fill="#f0d8b3" height="64.0" layoutX="30.0" layoutY="222.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="D6" fill="#b48661" height="64.0" layoutX="350.0" layoutY="222.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="D2" fill="#b48661" height="64.0" layoutX="94.0" layoutY="222.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="D4" fill="#b48661" height="64.0" layoutX="222.0" layoutY="222.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="C7" fill="#b48661" height="64.0" layoutX="414.0" layoutY="158.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="C2" fill="#f0d8b3" height="64.0" layoutX="94.0" layoutY="158.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="C6" fill="#f0d8b3" height="64.0" layoutX="350.0" layoutY="158.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="C4" fill="#f0d8b3" height="64.0" layoutX="222.0" layoutY="158.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="C8" fill="#f0d8b3" height="64.0" layoutX="478.0" layoutY="158.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="C5" fill="#b48661" height="64.0" layoutX="286.0" layoutY="158.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="C1" fill="#b48661" height="64.0" layoutX="30.0" layoutY="158.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <Rectangle fx:id="C3" fill="#b48661" height="64.0" layoutX="158.0" layoutY="158.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" />
+      <ImageView fx:id="b_pawn_8" fitHeight="64.0" fitWidth="64.0" layoutX="478.0" layoutY="414.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_pawn_7" fitHeight="64.0" fitWidth="64.0" layoutX="414.0" layoutY="414.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_pawn_6" fitHeight="64.0" fitWidth="64.0" layoutX="350.0" layoutY="414.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_pawn_5" fitHeight="64.0" fitWidth="64.0" layoutX="286.0" layoutY="414.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_pawn_4" fitHeight="64.0" fitWidth="64.0" layoutX="222.0" layoutY="414.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_pawn_3" fitHeight="64.0" fitWidth="64.0" layoutX="158.0" layoutY="414.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_pawn_2" fitHeight="64.0" fitWidth="64.0" layoutX="94.0" layoutY="414.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_pawn_1" fitHeight="64.0" fitWidth="64.0" layoutX="30.0" layoutY="414.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_bishop_1" fitHeight="64.0" fitWidth="64.0" layoutX="158.0" layoutY="478.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/bishop.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_bishop_2" fitHeight="64.0" fitWidth="64.0" layoutX="350.0" layoutY="478.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/bishop.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_rook_1" fitHeight="64.0" fitWidth="64.0" layoutX="30.0" layoutY="478.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/castle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_rook_2" fitHeight="64.0" fitWidth="64.0" layoutX="478.0" layoutY="478.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/castle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_knight_1" fitHeight="64.0" fitWidth="64.0" layoutX="94.0" layoutY="478.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/knight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_knight_2" fitHeight="64.0" fitWidth="64.0" layoutX="414.0" layoutY="478.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/knight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_queen" fitHeight="64.0" fitWidth="64.0" layoutX="286.0" layoutY="478.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/queen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b_king" fitHeight="64.0" fitWidth="64.0" layoutX="222.0" layoutY="478.0" onMouseClicked="#onMouseClicked_Black" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/black/king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_pawn_1" fitHeight="64.0" fitWidth="64.0" layoutX="478.0" layoutY="94.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_pawn_2" fitHeight="64.0" fitWidth="64.0" layoutX="414.0" layoutY="94.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_pawn_3" fitHeight="64.0" fitWidth="64.0" layoutX="350.0" layoutY="94.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_pawn_4" fitHeight="64.0" fitWidth="64.0" layoutX="286.0" layoutY="94.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_pawn_7" fitHeight="64.0" fitWidth="64.0" layoutX="94.0" layoutY="94.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_pawn_6" fitHeight="64.0" fitWidth="64.0" layoutX="158.0" layoutY="94.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_pawn_5" fitHeight="64.0" fitWidth="64.0" layoutX="222.0" layoutY="94.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_pawn_8" fitHeight="64.0" fitWidth="64.0" layoutX="30.0" layoutY="94.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/pawn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_bishop_1" fitHeight="64.0" fitWidth="64.0" layoutX="350.0" layoutY="30.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/bishop.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_bishop_2" fitHeight="64.0" fitWidth="64.0" layoutX="158.0" layoutY="30.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/bishop.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_rook_1" fitHeight="64.0" fitWidth="64.0" layoutX="478.0" layoutY="30.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/castle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_rook_2" fitHeight="64.0" fitWidth="64.0" layoutX="30.0" layoutY="30.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/castle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_knight_2" fitHeight="64.0" fitWidth="64.0" layoutX="94.0" layoutY="30.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/knight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_knight_1" fitHeight="64.0" fitWidth="64.0" layoutX="414.0" layoutY="30.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/knight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_king" fitHeight="64.0" fitWidth="64.0" layoutX="222.0" layoutY="30.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="w_queen" fitHeight="64.0" fitWidth="64.0" layoutX="286.0" layoutY="30.0" onMouseClicked="#onMouseClicked_White" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/128x128/white/queen.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="C" fill="#ffa91f" layoutX="62.0" layoutY="62.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C9" fill="#ffa91f" layoutX="127.0" layoutY="62.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C91" fill="#ffa91f" layoutX="190.0" layoutY="62.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C911" fill="#ffa91f" layoutX="254.0" layoutY="62.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C9111" fill="#ffa91f" layoutX="319.0" layoutY="62.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C91111" fill="#ffa91f" layoutX="383.0" layoutY="62.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C911111" fill="#ffa91f" layoutX="447.0" layoutY="62.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C9111111" fill="#ffa91f" layoutX="511.0" layoutY="62.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10" fill="#ffa91f" layoutX="63.0" layoutY="126.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C101" fill="#ffa91f" layoutX="127.0" layoutY="126.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1011" fill="#ffa91f" layoutX="191.0" layoutY="126.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10111" fill="#ffa91f" layoutX="255.0" layoutY="126.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C101111" fill="#ffa91f" layoutX="319.0" layoutY="126.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1011111" fill="#ffa91f" layoutX="383.0" layoutY="126.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10111111" fill="#ffa91f" layoutX="447.0" layoutY="126.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C101111111" fill="#ffa91f" layoutX="511.0" layoutY="126.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102" fill="#ffa91f" layoutX="63.0" layoutY="190.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1021" fill="#ffa91f" layoutX="126.0" layoutY="190.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10211" fill="#ffa91f" layoutX="190.0" layoutY="190.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102111" fill="#ffa91f" layoutX="255.0" layoutY="190.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1021111" fill="#ffa91f" layoutX="319.0" layoutY="190.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10211111" fill="#ffa91f" layoutX="383.0" layoutY="190.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102111111" fill="#ffa91f" layoutX="447.0" layoutY="190.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1021111111" fill="#ffa91f" layoutX="511.0" layoutY="190.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022" fill="#ffa91f" layoutX="63.0" layoutY="254.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10221" fill="#ffa91f" layoutX="127.0" layoutY="254.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102211" fill="#ffa91f" layoutX="190.0" layoutY="254.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022111" fill="#ffa91f" layoutX="255.0" layoutY="254.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10221111" fill="#ffa91f" layoutX="319.0" layoutY="254.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102211111" fill="#ffa91f" layoutX="382.0" layoutY="254.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022111111" fill="#ffa91f" layoutX="446.0" layoutY="254.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10221111111" fill="#ffa91f" layoutX="511.0" layoutY="254.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222" fill="#ffa91f" layoutX="62.0" layoutY="318.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221" fill="#ffa91f" layoutX="127.0" layoutY="318.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022211" fill="#ffa91f" layoutX="127.0" layoutY="382.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022212" fill="#ffa91f" layoutX="62.0" layoutY="510.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022213" fill="#ffa91f" layoutX="62.0" layoutY="446.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022214" fill="#ffa91f" layoutX="62.0" layoutY="382.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022215" fill="#ffa91f" layoutX="318.0" layoutY="318.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022216" fill="#ffa91f" layoutX="255.0" layoutY="318.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022217" fill="#ffa91f" layoutX="190.0" layoutY="318.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222111" fill="#ffa91f" layoutX="319.0" layoutY="382.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222112" fill="#ffa91f" layoutX="382.0" layoutY="382.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222113" fill="#ffa91f" layoutX="447.0" layoutY="382.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222114" fill="#ffa91f" layoutX="510.0" layoutY="382.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222115" fill="#ffa91f" layoutX="510.0" layoutY="318.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222116" fill="#ffa91f" layoutX="447.0" layoutY="318.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222117" fill="#ffa91f" layoutX="382.0" layoutY="318.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221111" fill="#ffa91f" layoutX="254.0" layoutY="446.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221112" fill="#ffa91f" layoutX="254.0" layoutY="510.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221113" fill="#ffa91f" layoutX="190.0" layoutY="446.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221114" fill="#ffa91f" layoutX="190.0" layoutY="510.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221115" fill="#ffa91f" layoutX="126.0" layoutY="510.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221116" fill="#ffa91f" layoutX="127.0" layoutY="448.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221117" fill="#ffa91f" layoutX="190.0" layoutY="382.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022211111" fill="#ffa91f" layoutX="382.0" layoutY="446.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022211112" fill="#ffa91f" layoutX="318.0" layoutY="510.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022211113" fill="#ffa91f" layoutX="319.0" layoutY="446.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C1022211114" fill="#ffa91f" layoutX="255.0" layoutY="382.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222111111" fill="#ffa91f" layoutX="382.0" layoutY="510.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222111112" fill="#ffa91f" layoutX="510.0" layoutY="446.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C10222111113" fill="#ffa91f" layoutX="446.0" layoutY="446.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221111111" fill="#ffa91f" layoutX="446.0" layoutY="510.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Circle fx:id="C102221111112" fill="#ffa91f" layoutX="511.0" layoutY="510.0" onMouseClicked="#clickedOnPath" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+      <Label layoutX="505.0" layoutY="540.0" text="a">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="540.0" text="d">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="540.0" text="e">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="540.0" text="f">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="540.0" text="g">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="540.0" text="h">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="540.0" text="c">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="540.0" text="b">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="2.0" rotate="180.0" text="a">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="2.0" rotate="180.0" text="b">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="2.0" rotate="180.0" text="c">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="2.0" rotate="180.0" text="d">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="2.0" rotate="180.0" text="e">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="2.0" rotate="180.0" text="f">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="2.0" rotate="180.0" text="g">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="2.0" rotate="180.0" text="h">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="497.0" rotate="90.0" text="1">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="435.0" rotate="90.0" text="2">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="369.0" rotate="90.0" text="3">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="305.0" rotate="90.0" text="4">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="247.0" rotate="90.0" text="5">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="177.0" rotate="90.0" text="6">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="113.0" rotate="90.0" text="7">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="49.0" rotate="90.0" text="8">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="497.0" rotate="270.0" text="1">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="433.0" rotate="270.0" text="2">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="369.0" rotate="270.0" text="3">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="552.0" layoutY="305.0" rotate="270.0" text="4">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="552.0" layoutY="247.0" rotate="270.0" text="5">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="177.0" rotate="270.0" text="6">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="107.0" rotate="270.0" text="7">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="49.0" rotate="270.0" text="8">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#806b59" height="112.0" layoutX="11.0" layoutY="580.0" stroke="BLACK" strokeType="INSIDE" width="550.0" />
+      <ScrollPane fx:id="scrollPane" layoutX="286.0" layoutY="586.0" prefHeight="100.0" prefWidth="270.0" style="-fx-background-color: b48661;">
+         <content>
+            <TextFlow fx:id="textFlow" prefHeight="100.0" prefWidth="254.0" style="-fx-background-color: b48661;" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="234.0" layoutY="627.0" rotate="270.0" text="CONSOLE">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="627.0" rotate="270.0" text="MOVE">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="moveSign" arcHeight="5.0" arcWidth="5.0" fill="#f0d8b3" height="72.0" layoutX="45.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="197.0" />
+   </children>
+</AnchorPane>
